@@ -1,0 +1,13 @@
+pentru a te conecta la o baza de date aflata pe serverul tomcat 9, 
+cauta pe google "tomcat 9 mysql datasource jndi", https://tomcat.apache.org/tomcat-9.0-doc/jndi-resources-howto.html
+sau "tomcat 9 mysql datasource jndi context configuration" https://tomcat.apache.org/tomcat-9.0-doc/jndi-datasource-examples-howto.html
+selecteaza "MySQL DBCP 2 Example" si copiaza
+"Configure the JNDI DataSource in Tomcat by adding a declaration for your resource to your Context."
+in contex.xml din proiectul servers creat de catre tomcat.
+
+in cazul de fata trebuie modificat asa:
+<Resource name="jdbc/springdb" auth="Container" type="javax.sql.DataSource"
+               maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+               username="devuser" password="devuser" driverClassName="com.mysql.cj.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/spring_db?useSSL=false"/>
+

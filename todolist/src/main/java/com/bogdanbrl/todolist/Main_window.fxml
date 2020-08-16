@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bogdanbrl.todolist.Controller_MainWindow">
+   <top>
+      <VBox prefHeight="45.0" prefWidth="600.0" />
+   </top>
+   <left>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="todoListView" onMouseClicked="#handleClickListView">
+               
+            </ListView>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="activityDetailsTextArea" editable="false" prefHeight="365.0" prefWidth="400.0" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font></TextArea>
+            <HBox alignment="BASELINE_LEFT" fillHeight="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="29.0" prefWidth="400.0" VBox.vgrow="NEVER">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <Label alignment="TOP_CENTER" text="Due until:  ">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="activityDeadlineLabel" alignment="BOTTOM_RIGHT">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

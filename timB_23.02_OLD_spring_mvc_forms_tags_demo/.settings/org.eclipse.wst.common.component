@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+                
+    
+    
+    <wb-module deploy-name="timB_23.02_OLD_spring_mvc_forms_tags_demo-0.0.1-SNAPSHOT">
+                                
+        
+        
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+                                
+        
+        
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+                                
+        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                                
+        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+                
+        <property name="java-output-path" value="/timB_22.24_OLD_fromTim_mvc_in_depth_testing_all_source_code/target/classes"/>
+        <property name="context-root" value="timB_23.02_OLD_spring_mvc_forms_tags_demo"/>
+                            
+    
+    
+    </wb-module>
+            
+
+
+</project-modules>

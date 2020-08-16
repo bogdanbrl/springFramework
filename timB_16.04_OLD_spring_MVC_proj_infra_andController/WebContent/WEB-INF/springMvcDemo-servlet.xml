@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+
+	<!-- component-scan is basically a mechanism that scans packages to find 
+		and register beans within the application context. So the container will 
+		treat our controller as a bean, and it ultimately can find this bean, the 
+		controller in this case by scanning the base package "com.criptex.springDemo.controller". 
+		This is also called auto discovery, and what it's doing is it's simplifying 
+		the XML one step further. The reason is that now you don't even need to add 
+		the bean tag to the spring configuration file, ie the springMvcDemo-servlet.xml. 
+		You just mark the specific beans with specific annotations which I've already 
+		done and spring will automatically wire the marked beans and the dependencies 
+		into the spring container. -->
+	<context:component-scan
+		base-package="com.criptex.springDemo.controller">
+	</context:component-scan>
+
+	<!-- With this line "annotation-driven" we are basically declaring explicit 
+		support for annotation driven mvc controllers. So without this annotation, 
+		we would have to explicitly declare a lot of springs supported bean classes 
+		with our configuration file. -->
+	<mvc:annotation-driven></mvc:annotation-driven>
+	<bean id="welcomeService"
+		class="com.criptex.service.WelcomeService">
+	</bean>
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+</beans>

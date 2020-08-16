@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="timB_16.04_OLD_spring_MVC_proj_infra_andController-0.0.1-SNAPSHOT">
+                
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+                
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+                
+        <property name="java-output-path" value="/timB_16.01_OLD_spring_MVC_proj_infrastructure/build/classes"/>
+        <property name="context-root" value="timB_16.04_OLD_spring_MVC_proj_infra_andController"/>
+            
+    </wb-module>
+    
+</project-modules>

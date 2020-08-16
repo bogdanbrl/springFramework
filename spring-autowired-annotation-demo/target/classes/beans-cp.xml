@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<bean id="myorg" class="com.bogdan.springdemo.domain.Organization"
+		destroy-method="destroy" init-method="initialize">
+		<constructor-arg value="Amazon" name="companyName"></constructor-arg>
+		<constructor-arg value="1994" name="yearOfIncorporation"></constructor-arg>
+		<property name="postalCode" value="75757"></property>
+		<property name="employeeCount" value="7500"></property>
+		<property name="slogan"	value="Have fun codding! Make history!"></property>
+		<property name="businessService" ref="cloudService"></property>
+	</bean>
+	<bean id="cloudService"
+		class="com.bogdan.springdemo.serviceimpl.CloudServiceImpl">
+	</bean>
+	<bean id="ecommerceService"
+		class="com.bogdan.springdemo.serviceimpl.EcommerceSeviceImpl">
+	</bean>
+	<bean id="industrialProduct"
+		class="com.bogdan.springdemo.domain.product.IndustrialProduct">
+	</bean>
+	<bean id="consumerProduct"
+		class="com.bogdan.springdemo.domain.product.ConsumerProduct">
+	</bean>
+	<bean id="myfair"
+		class="com.bogdan.springdemo.domain.promotion.TradeFair">
+	</bean>
+	<context:annotation-config></context:annotation-config>
+</beans>
