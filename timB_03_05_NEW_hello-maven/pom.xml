@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.criptex</groupId>
+    <artifactId>timB_03_05_NEW_hello-maven</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
+    </dependencies>
+
+
+
+<!--    // spring frawork doesn't support anyre java 5,     -->
+<!--    // so you need to insert into pox the following lines "&lt;!&ndash;<build></build>&ndash;&gt;"      -->
+<!--    // use the latest versons of groupID artifactID version and configuration (notice target = 11 -> java 11)       -->
+<!--    // after that the project will be compiled in java 11 or any other later version (minimum java 8)       -->
+<!--    then:       -->
+<!--    File -> Project structure -> Project -> Project SDK -> 11.      -->
+<!--    File -> Project structure -> Project -> Project language level -> 11.       -->
+<!--    File -> Project structure -> Project -> Modules -> -> Sources &ndash;&gt; 11        -->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <target>11</target>
+                    <source>11</source>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,7 @@
+com\criptex\AppConfig.class
+com\criptex\MessageGenerator.class
+com\criptex\MessageGeneratorImpl.class
+com\criptex\GameImpl.class
+com\criptex\NumberGenerator.class
+com\criptex\NumberGeneratorImpl.class
+com\criptex\Game.class

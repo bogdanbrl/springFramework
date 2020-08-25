@@ -1,0 +1,5 @@
+com\criptex\service\GameServiceImpl.class
+com\criptex\util\ViewNames.class
+com\criptex\WebMain.class
+com\criptex\service\GameService.class
+com\criptex\config\WebConfig.class

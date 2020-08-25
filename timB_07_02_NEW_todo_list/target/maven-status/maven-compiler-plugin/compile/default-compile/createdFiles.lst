@@ -1,0 +1,3 @@
+com\criptex\config\WebConfig.class
+com\criptex\controller\DemoController.class
+com\criptex\config\WellAppInitializer.class

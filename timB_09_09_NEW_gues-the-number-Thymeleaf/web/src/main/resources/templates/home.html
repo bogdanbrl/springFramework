@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: headFragment}">
+    <meta charset="UTF-8">
+    <title>Title content</title>
+</head>
+<body>
+
+    <div align="center">
+        <h1>Welcome to the Guess Number Game</h1>
+
+        <h3>
+            <a th:href="@{__${T(com.criptex.util.GameMappings).PLAY}__}"
+               th:text="Play"
+               href="play.html">
+
+<!--               pt a ma ajuta de preview mode in browser-->
+<!--               adica sa verific cum arata pagina intr-un browser fara sa pornesc servarul local-->
+<!--               voi folosi sintaxa "dummy" - doar pt preview -->
+<!--                href="play.html"-->
+
+                Click to Play
+            </a>
+        </h3>
+
+        <div th:replace="~{fragments/footer :: footerFragment}">Footer goes here</div>
+    </div>
+
+</body>
+</html>

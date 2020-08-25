@@ -1,0 +1,8 @@
+com\criptex\controller\GameController.class
+com\criptex\service\GameService.class
+com\criptex\service\GameServiceImpl.class
+com\criptex\util\ViewNames.class
+com\criptex\util\AttributeNames.class
+com\criptex\WebMain.class
+com\criptex\util\GameMappings.class
+com\criptex\config\WebConfig.class

@@ -1,0 +1,4 @@
+rootProject.name = 'timB_11_01_NEW_bb-bms'
+include 'core'
+include 'web'
+

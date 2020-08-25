@@ -1,0 +1,13 @@
+com\criptex\model\TodoItem.class
+com\criptex\service\TodoItemService.class
+com\criptex\model\TodoData.class
+com\criptex\service\DemoServiceImpl.class
+com\criptex\service\DemoService.class
+com\criptex\util\ViewNames.class
+com\criptex\util\AttributeNames.class
+com\criptex\controller\TodoItemController.class
+com\criptex\service\TodoItemServiceImpl.class
+com\criptex\util\Mappings.class
+com\criptex\config\WebConfig.class
+com\criptex\controller\DemoController.class
+com\criptex\config\WebAppInitializer.class

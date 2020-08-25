@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the number</title>
+</head>
+<body>
+
+    <div align="center">
+        <h1>Welcome to the Guess Number Game</h1>
+
+        <a href="http://www.google.com">Click to Play</a><br>
+        <a th:text="Play" href="http://www.google.com">Click to Play</a><br>
+        <a th:href="play" th:text="Play" href="http://www.google.com">Click to Play</a><br> <!-- will open localhost:8080/play -->
+        <a th:href="play" th:text="Play">Click to Play</a><br>
+
+        <a th:href="@{__${T(com.criptex.util.GameMappings).PLAY}__}" th:text="Play">
+            Click to Play
+        </a>
+    </div>
+
+</body>
+</html>
